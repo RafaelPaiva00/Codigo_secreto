@@ -38,7 +38,8 @@ while True:
 
     acertos = Acertos.calcular(codigo_list, palpite_list)
 
-    print(acertos.vetor_acertos)
+    print("".join(acertos.vetor_acertos))
+    
     tentativas += 1
 
     if acertos.vetor_acertos.count("x") == 4:
